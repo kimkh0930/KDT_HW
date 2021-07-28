@@ -1,35 +1,35 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.header{
+.header {
     background-color: black;
     border-bottom: 1px solid lightgray;
 }
 
-.container{
+.container {
     width: auto;
     margin: auto;
 }
 
-.container-left{
+.container-left {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 30px;
     float: left;
 }
 
-.logo{
+.logo {
     float: left;
     margin-right: 5px;
 }
 
-.logo img{
+.logo img {
     display: block;
 }
 
-.menu{
+.menu {
     float: left;
 }
 
@@ -39,34 +39,43 @@ body{
     line-height: 1;
 }
 
-.search{
+.search {
     float: left;
     padding-top: 3px;
     padding-right: 6px;
 }
 
-.container-right{
+.container-right {
     padding-top: 20px;
     padding-bottom: 20px;
     float: right;
 }
 
-a:link{color: white; text-decoration: none;}
-a:visited { color: white; text-decoration: none;}
-a:hover{color: lightgray;}
+a:link { 
+    color: white; text-decoration: none;
+}
 
-input{
+a:visited {
+    color: white; text-decoration: none;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+input {
+    size: 25px;
     height: 25px;
     border-radius: 6%;
     background-color: lightgray;
 }
 
-.signup{
+.signup {
     border:1px solid white;
     border-radius: 15%;
 }
 
-.clearfix::after{
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
