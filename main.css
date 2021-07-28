@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    border-bottom: 1px solid lightgray;
+}
+
+.container{
+    width: auto;
+    margin: auto;
+}
+
+.container-left{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    float: left;
+}
+
+.logo{
+    float: left;
+    margin-right: 5px;
+}
+
+.logo img{
+    display: block;
+}
+
+.menu{
+    float: left;
+}
+
+.menu-item {
+    float: left;
+    padding: 8px 10px;
+    line-height: 1;
+}
+
+.search{
+    float: left;
+    padding-top: 3px;
+    padding-right: 6px;
+}
+
+.container-right{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
+}
+
+a:link{color: white; text-decoration: none;}
+a:visited { color: white; text-decoration: none;}
+a:hover{color: lightgray;}
+
+input{
+    height: 25px;
+    border-radius: 6%;
+    background-color: lightgray;
+}
+
+.signup{
+    border:1px solid white;
+    border-radius: 15%;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
