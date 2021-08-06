@@ -14,7 +14,7 @@ const data = [
 
 // 사용자 입력 받기
 const line = prompt('최대 금액을 입력해주세요.');
-const amount = +line;
+const amount = Number(line);
 
 // 주어진 금액으로 살 수 있는 가장 비싼 상품을 구함
 const item = getItemByAmount(data, amount);
@@ -24,24 +24,22 @@ const msg = item ?
     '살 수 있는 상품이 없습니다.';
 
 // 결과 출력
-alert(msg);
+console.log(msg);
 
 // 아래에 getItemByAmount 함수를 작성하세요.
 
 function getItemByAmount(data, amount) {
-    let max = { name : '', price:0}; //객체를 저장하기 위한 변수
+    let max = {name : '', price : 0}; //객체를 저장하기 위한 변수
     let count = 0; 
-  
+    if(isNaN(amount))max=false;
+
     data.forEach((element) => {
-        count++;
-  
       if (amount >= element.price && max.price < element.price) { // 가진 돈보다는 싼 물건들 중 가장 비싼 물건을 반환
         max = element;
       }
-      else if(amount< element.price && count ===data.length || isNaN(amount)){ //data의 마지막까지 읽었을 때 내가 가진 돈보다 싼 물건이 없다면 false를 반환하여 3항 연산자를 충족
-        max = false;
-      }
     });
-  
+    if(max.price===0){
+      max=false;
+    }
     return max;
   }
