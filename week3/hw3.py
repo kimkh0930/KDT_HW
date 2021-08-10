@@ -43,8 +43,8 @@ import re
 #### gmail 발송 기능에 필요한 계정 정보를 아래 코드에 입력하세요.
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 465
-SMTP_USER = 'kimkh940930@gmail.com'
-SMTP_PASSWORD = '비밀번호' # 개인정보를 위해 표시 안했습니다.
+SMTP_USER = 'YOUR_EMAIL'
+SMTP_PASSWORD = 'YOUR_EMAIL_PASSWORD' # 개인정보를 위해 표시 안했습니다.
 
 #### 아래 코드를 실행해 메일 발송에 필요한 send_mail 함수를 만드세요.
 def send_mail(name, addr, subject, contents, attachment=None):
